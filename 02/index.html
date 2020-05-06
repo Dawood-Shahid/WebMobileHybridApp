@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d4e98b5c9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 2 | Registration Form</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="../index.html">
+            <i class="far fa-arrow-alt-circle-left icon"></i>
+        </a>
+    </div>
+    <section>
+        <div class="logo">
+            <!-- <h2 id="assHeading">Assignment # 02</h2> -->
+            <img src="Saylani-logo.png" alt="Saylani Logo" id="logo">
+            <h2>Student Registration Form</h2>
+        </div>
+
+        <div class="body">
+            <form action="submit">
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" maxlength="30"
+                        placeholder="Enter your first name" required>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" maxlength="30" placeholder="Enter your last name"
+                        required>
+                    <label for="dateOfBirth">Date of birth:</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="Enter your Date of birth"
+                        required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <label for="mobileNum">Mobile Number:</label>
+                    <input type="tel" id="mobileNum" name="mobileNum" pattern="0[1-9]{3}[0-9]{7}"
+                        placeholder="Enter your mobile numbre (without '-')" required>
+                    <label for="gender">Gender:</label>
+                    <div>
+                        <input type="radio" name="gender" id="gender" value="male">Male
+                        <input type="radio" name="gender" id="gender" value="femle">Female
+                    </div>
+                    <label for="address">Address:</label>
+                    <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"
+                        required></textarea>
+                    <label for="city">City:</label>
+                    <input type="text" name="city" placeholder="Enter your city name" required>
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" placeholder="Enter your country name" required>
+                    <label for="state">State:</label>
+                    <input type="text" name="state" placeholder="Enter your state" required>
+                    <label for="pinCode">PIN Code:</label>
+                    <input type="tel" name="pinCode" id="pinCode" pattern="[0-9]{6}" placeholder="Enter PIN code"
+                        required>
+                    <label for="hobies">Hobies:</label>
+                    <div>
+                        <input type="checkbox" name="hobies" id="hobies" value="drawing">Drawing
+                        <input type="checkbox" name="hobies" id="hobies" value="singing">Singing
+                        <input type="checkbox" name="hobies" id="hobies" value="dancing">Dancing
+                        <input type="checkbox" name="hobies" id="hobies" value="sketching">Sketching
+                        <div>
+                            <input type="checkbox" name="hobies" id="hobies" class="otherHobies" value="others">Others
+                            <input type="text" name="hobies" id="hobies" class="otherHobiesText"
+                                placeholder="If others, then mentio here">
+                        </div>
+                    </div>
+                    <label for="qualification">Qualification:</label>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of Passing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Class X</td>
+                                <td class="center"><input type="text" name="matricBoard" required=""></td>
+                                <td class="center"><input type="text" name="matricPercentage" required=""></td>
+                                <td class="center"><input type="text" name="matricPass" required=""></td>
+                            </tr>
+                            <tr>
+                                <td>2. Class XII</td>
+                                <td class="center"><input type="text" name="interBoard" required=""></td>
+                                <td class="center"><input type="text" name="interPercentage" required=""></td>
+                                <td class="center"><input type="text" name="interPass" required=""></td>
+                            </tr>
+                            <tr>
+                                <td>3. Graduation</td>
+                                <td class="center"><input type="text" name="graduationBoard" required=""></td>
+                                <td class="center"><input type="text" name="graduationPercentage" required=""></td>
+                                <td class="center"><input type="text" name="graduationPass" required=""></td>
+                            </tr>
+                            <tr>
+                                <td>4. Masters</td>
+                                <td class="center"><input type="text" name="mastersBoard" required=""></td>
+                                <td class="center"><input type="text" name="mastersPercentage" required=""></td>
+                                <td class="center"><input type="text" name="mastersPass" required=""></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="center">(10 char Max)</td>
+                                <td class="center">(upto 2 decimal)</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <label for="appliedFor">Courses Applied For:</label>
+                    <div>
+                        <input type="radio" name="appliedFor" id="appliedFor">BCA
+                        <input type="radio" name="appliedFor" id="appliedFor">B.Com
+                        <input type="radio" name="appliedFor" id="appliedFor">B.Sc
+                        <input type="radio" name="appliedFor" id="appliedFor">B.A
+                    </div>
+                </div>
+                <div class="btnContainer">
+                    <button type="submit" id="submit" class="btn"><a href="./submitResponse.html">Submit</a></button>
+                    <button type="reset" id="reset" class="btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

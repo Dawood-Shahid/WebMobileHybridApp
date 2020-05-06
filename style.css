@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #f7f8fa;
+}
+
+#mainBodyCover {
+    width: 100%;
+}
+
+.header {
+    border-bottom: 1px dotted;
+    width: 100%;
+    padding: 10px 0 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-image: linear-gradient( 140deg,  #0066b3 10%, #f7f8fa 50% );
+}
+
+.headerContent {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    border-bottom: 2px solid;
+}
+
+#brake {
+    display: none;
+}
+
+.info {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-rows: repeat(auto-fit, auto);
+    font-size: 20px;
+    padding: 10px 0 0 0;
+    grid-row-gap: 10px;
+}
+
+.info > p {
+    border-bottom: 1px solid;
+    padding: 0 35px;
+}
+
+#mainBodyContainer {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.sideNavbar {
+    width: 350px;
+    height: 82.8vh;
+    border-right: 1px solid;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.assignmentHeading {
+    align-self: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted;
+}
+
+.assignmentContent {
+    align-items: center;
+    padding: 10px 50px 0 50px;
+    overflow: auto;
+}
+
+.assignmentContent > ol {
+    margin-bottom: 10px;
+}
+
+.assignmentContent > ol > li {
+    padding: 5px 0;    
+    border-bottom: 1px dotted;
+}
+
+.content {
+    width: 1240px;
+    height: 80.8vh;
+    position: relative;
+    left: 358px;
+    overflow: auto;
+}
+
+.assignmentSection {
+    border: 1PX solid;
+    border-radius: 10PX;
+    margin: 15PX;
+    padding: 10px;
+}
+
+.assignmentGroups {
+    margin: 10px 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(auto, 1fr));
+    grid-template-rows: repeat(auto-fit, auto);
+    grid-row-gap: 10px;
+}
+
+.assignmentSidebarLinks {
+    display: inline-block;
+    width: 250px;
+}
+
+.assignmentLinks {
+    display: inline-block;
+    width: 180px;
+    border: 1px solid;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.assignmentLinks:hover {
+    background-color: #c8dced;
+}
+
+@media(max-width: 1440px) {
+
+    .content {
+        width: 1080px;
+        /* border: 1px solid; */
+    }
+
+    #mainBodyContainer {
+        width: 1440px;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    #mainBodyContainer {
+        width: 1024px;
+    }
+
+    .content {
+        width: 665px;
+        /* border: 1px solid; */
+    }
+
+    .assignmentGroups {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 1fr));
+        grid-template-rows: repeat(auto-fit, auto);
+    }
+}
+
+@media(max-width: 768px) {
+
+    .title {
+        font-size: 22px;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    #mainBodyContainer {
+        width: 768px;
+        /* border: 1px solid; */
+    }
+    .content {
+        width: 515px;
+        left: 250px;
+    }
+
+    .sideNavbar {
+        width: 250px;
+    }
+
+    .assignmentHeading {
+        font-size: 18px;
+    }
+
+    .assignmentGroups {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+        grid-template-rows: repeat(auto-fit, auto);
+    }
+}
+
+@media(max-width: 500px) {
+
+    .title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #brake {
+        display: block;
+    }
+
+    .info {
+        width: 300px;
+        font-size: 14px;
+        /* padding: 10px 0 0 0;
+        grid-row-gap: 10px;
+        border: 1px solid; */
+    }
+
+    .info > p {
+        padding: 0 10px;
+    }
+
+    #mainBodyContainer {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid; */
+    }
+
+    .sideNavbar {
+        width: 300px;
+        height: 152px;
+        border-right: none;
+        border-bottom: 1px solid;
+        position: fixed;
+        left: auto;
+        /* top: 300px; */
+        display: flex;
+        flex-direction: column;
+        /* z-index: 3; */
+    }
+
+    .content {
+        width: 300px;
+        height: 45vh;
+        position: fixed; 
+        top: 300px;
+        left: auto;
+    }
+
+    .assignmentHeading {
+        font-size: 18px;
+    }
+
+    .assignmentGroups {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
+        grid-template-rows: repeat(auto-fit, auto);
+    }
+}

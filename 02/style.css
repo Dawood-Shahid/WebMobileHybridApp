@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Merriweather;
+    src: url('../Merriweather-Light.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    /* background-color: white; */
+}
+
+.icon {
+    border-radius: 100%;
+    margin: 20px 30px;
+    font-size: 40px;
+    color: black;
+}
+
+.icon:hover {
+    border: 2px solid;
+    margin: 10px 20px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    text-align: center;
+}
+
+#logo {
+    width: 380px;
+    height: 90px;
+    /* border: solid 1px; */
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#assHeading {
+    margin-top: 1rem;
+    
+}
+
+form > div {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: repeat(auto-fit, auto);
+    grid-row-gap: 10px;
+}
+
+.body {
+    border: 1px solid;
+    width: 1100px;
+    margin: 1rem auto 10px auto;
+    background-color: rgb(226, 255, 247);
+    padding: 25px 25px 15px 25px;
+    border-radius: 5px;
+}
+
+.btnContainer {
+    /* border: solid 1px; */
+    width: 250px;
+    margin: 15px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+[type~=radio], [type~=checkbox] {
+    margin: 5px 10px;
+}
+
+[type~=text], [type~=email], [type~=tel], [type~=date], textarea, table {
+    border: solid 1px;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+.center  {
+    text-align: center;
+}
+
+.otherHobiesText {
+    margin-left: 12px;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.btn {
+    padding: 3px 15px;
+    width: 100px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+/* Response page */
+
+.responseBodySection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responseBody {
+    /* border: 1px solid; */
+    width: 500px;
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.responseBody > * {
+    margin-top: 1rem;
+}
+
+.responseBody > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.color {
+    color: green;
+}
+
+.responsePageAnchor {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    border-bottom: 2px solid;
+}
+
+.check {
+    font-size: 200px;
+}
