@@ -1,0 +1,355 @@
+@font-face {
+  font-family: Merriweather;
+  src: url("../Merriweather-Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.backButton {
+  /* position: sticky; */
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  /* background-color: blue; */
+}
+
+.icon {
+  border-radius: 100%;
+  /* border: 1px solid yellow; */
+  margin: 20px 30px;
+  font-size: 40px;
+  color: black;
+  /* background-color: black; */
+}
+
+.icon:hover {
+  border: 2px solid;
+  margin: 10px 20px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  transition-duration: 1s;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  width: 100%;
+}
+
+#active-page {
+  border-bottom: 2px solid #7f7f7f;
+  padding-bottom: 0px;
+}
+
+/* header */
+
+.header {
+  background-image: linear-gradient(to right, white 40%, black 75%);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header-contanier {
+  /* border: 1px solid; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-img {
+  width: 180px;
+  height: 80px;
+}
+
+#sign-up > ul > li {
+  display: inline;
+  padding: 0 0.3rem;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+}
+
+#sign-up > ul > li > a:hover {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+
+/* navigation */
+
+.navigation {
+  border-top: white 1px dotted;
+  border-bottom: white 1px dotted;
+  position: sticky;
+  background-color: black;
+  top: 80px;
+  left: 0;
+  z-index: 2;
+}
+
+.nav-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  /* border: solid 1px; */
+}
+
+.nav-container > ul {
+  margin: 0 auto;
+}
+
+.nav-container > ul > li {
+  display: inline;
+  padding: 0 0.2rem;
+  font-size: 20px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container > ul > li > a {
+  padding: 1rem;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item {
+  font-size: 18px;
+}
+
+.dropdown-item:hover {
+  font-size: 18px;
+  color: white;
+  background-color: #7f7f7f;
+}
+
+.nav-item > a:hover {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+
+/* slider */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 628px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider-text > h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.slider-text > p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel {
+  border-bottom: 1px dotted;
+}
+
+.carousel-item > img {
+  height: 628px;
+}
+
+/* categories */
+
+.categories > h1 {
+  margin: 1rem 2rem;
+}
+
+.category-container {
+  margin: 0 auto;
+  border-top: 1px dotted white;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  grid-template-rows: repeat(auto-fit, auto);
+}
+
+.category-items {
+  margin: 1.5rem auto;
+  padding: 0.5rem;
+  border-radius: 15px;
+  /* border: 1px solid; */
+}
+
+.items-img {
+  width: 550px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.item-text {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.category-items > a:hover {
+  text-decoration: none;
+}
+
+.category-items > a:hover .item-text {
+  color: #7f7f7f;
+}
+
+.category-items > a:hover .items-img {
+  border-radius: 15px;
+  transition: 2s;
+}
+
+.category-items:hover {
+  box-shadow: 1px 1px 23px 11px rgba(127, 127, 127, 0.52);
+}
+
+/* footer */
+
+.footer-content {
+  border-top: 1px dotted white;
+  margin: 1.5rem auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* about & contact page css */
+
+.about-container,
+.contact-container,
+.signup-container,
+.login-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  /* border: solid 1px; */
+}
+
+.about-container > h1,
+.contact-container > h1,
+.signup-container > h1,
+.login-container > h1,
+.items-container > h1 {
+  margin: 1rem 2rem;
+}
+
+.about-container > p {
+  padding: 0.5rem 2.5rem;
+}
+
+.contact-form,
+.contact-icons,
+.signup-form,
+.login-form {
+  padding: 1rem;
+  /* border: solid 1px; */
+  margin: 1rem 2rem;
+}
+
+.form-group > button {
+  margin-top: 1rem;
+}
+
+.contact-icons {
+  display: flex;
+}
+
+.contact-icons .contact-ion {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.contact-ion > a > img {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+}
+
+.contact-ion > a > img:hover {
+  box-shadow: 1px 1px 19px 7px rgba(127, 127, 127, 1);
+}
+
+.form-group > input:focus {
+  border-color: #7f7f7f;
+}
+
+/* items pages css */
+
+.items-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.items-container * {
+  border-radius: 15px;
+}
+
+.items-content {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-rows: repeat(auto-fit, auto);
+}
+
+.my-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.my-card > div {
+  margin: 5px;
+}
+
+.my-card-img {
+  align-self: center;
+}
+
+.my-card-img > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.my-card:hover {
+  box-shadow: 1px 1px 19px 7px rgba(127, 127, 127, 1);
+}
+
+.my-card-img > img:hover {
+  border-radius: 15px;
+  transition: 2s;
+}

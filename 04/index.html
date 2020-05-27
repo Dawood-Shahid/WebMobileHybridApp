@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8d4e98b5c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1140px)"
+      href="./css/media.css"
+    />
+    <title>Gentleman's Selection | Home</title>
+  </head>
+
+  <body>
+    <!-- Back button -->
+    <div class="backButton">
+      <a href="../index.html">
+        <i class="far fa-arrow-alt-circle-left icon"></i>
+      </a>
+    </div>
+
+    <section class="header">
+      <div class="header-contanier">
+        <div id="logo">
+          <a href="./index.html">
+            <img
+              src="./Images/Home/logo.png"
+              alt="Gentleman's Selection"
+              id="logo-img"
+            />
+          </a>
+        </div>
+
+        <div id="sign-up">
+          <ul>
+            <li><a href="./signUp-LogIn/signUp.html">Sign Up</a></li>
+            <li><a href="./signUp-LogIn/logIn.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="navigation">
+      <div class="nav-container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html" id="active-page">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Items
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./items/belts.html">Belts</a>
+              <a class="dropdown-item" href="./items/glasses.html">Glasses</a>
+              <a class="dropdown-item" href="./items/shoes.html">Shoes</a>
+              <a class="dropdown-item" href="./items/watches.html">Watches</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about/about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact/contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <scection class="slider">
+      <div class="slider-text">
+        <h1>New Arivals</h1>
+        <p>Comming Soon</p>
+      </div>
+      <div class="slider-content">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./Images/Home/arivalS2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./Images/Home/arivalS3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./Images/Home/arivalS6.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./Images/Home/arivalS7.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </scection>
+
+    <section class="categories">
+      <h1>Categories</h1>
+      <div class="category-container">
+        <div class="category-items">
+          <a href="./items/belts.html">
+            <div>
+              <img
+                src="./Images/mens/belts/front.jpg"
+                alt=""
+                class="items-img"
+              />
+            </div>
+            <div>
+              <h3 class="item-text">Belts</h3>
+            </div>
+          </a>
+        </div>
+        <div class="category-items">
+          <a href="./items/glasses.html">
+            <div>
+              <img
+                src="./Images/mens/glasses/front.jpg"
+                alt=""
+                class="items-img"
+              />
+            </div>
+            <div>
+              <h3 class="item-text">Glasses</h3>
+            </div>
+          </a>
+        </div>
+        <div class="category-items">
+          <a href="./items/watches.html">
+            <div>
+              <img
+                src="./Images/mens/watches/front.jpg"
+                alt=""
+                class="items-img"
+              />
+            </div>
+            <div>
+              <h3 class="item-text">Watches</h3>
+            </div>
+          </a>
+        </div>
+        <div class="category-items">
+          <a href="./items/shoes.html">
+            <div>
+              <img
+                src="./Images/mens/shoes/front.jpg"
+                alt=""
+                class="items-img"
+              />
+            </div>
+            <div>
+              <h3 class="item-text">Shoes</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-container">
+        <h6 class="footer-content">
+          Copyright &copy 2020, Gentleman's Selection, All Rights Reserved
+        </h6>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
