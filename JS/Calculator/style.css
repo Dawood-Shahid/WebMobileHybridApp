@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Merriweather;
+    src: url('../../Merriweather-Light.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.backButton {
+    /* position: sticky; */
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    /* background-color: red; */
+}
+
+.icon {
+    border-radius: 100%;
+    margin: 20px 30px;
+    font-size: 40px;
+    color: black;
+}
+
+.icon:hover {
+    border: 2px solid;
+    margin: 10px 20px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+
+.calculator{
+    border: 1px solid;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 5px;
+    background-color: rgb(205, 232, 243);
+
+}
+
+.calcScreen{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.calcScreen > span,
+.calcScreen > input {
+    border: 1px solid;
+    padding: 2px 5px;
+    margin: 2px;
+    background-color: white;
+}
+
+.reasult {
+    text-align: right;
+    height: 30px;
+}
+
+.calcBody{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    grid-template-rows: repeat(autofit, auto);
+    padding-bottom: 10px;
+}
+
+.calcBody > button {
+    margin: 2px;
+    border: 1px solid black;
+}
+
+.equal {
+    grid-column: 3/-1;
+    background-color: #4285f4;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #6ea3f8;
+}
+
+.opr {
+    background-color: #dfe1e5;
+}
+
+.opr:hover {
+    background-color: #c4c6ca;
+}
+
+.num {
+    background-color: #ffffff;
+}
+
+.num:hover {
+    background-color: #f5faffa8;
+}

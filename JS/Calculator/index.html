@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d4e98b5c9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Calculator</title>
+</head>
+<body>
+    
+    <!-- Back button -->
+    <div class="backButton">
+        <a href="../../index.html">
+            <i class="far fa-arrow-alt-circle-left icon"></i>
+        </a>
+    </div>
+
+    <div class="calculator">
+        <!-- screen -->
+        <div class="calcScreen">
+            <!-- <span>1</span> -->
+            <input type="text" class="" name="userInput" id="userInput">
+            <span class="reasult" id="reasult">0</span>
+        </div>
+
+        <!-- body -->
+        <div class="calcBody">
+            <button class="opr" onclick="remove()">C</button>
+            <button class="opr" onclick="getInput('(')">(</button>
+            <button class="opr" onclick="getInput(')')">)</button>
+            <button class="opr" onclick="getInput('/')">/</button>
+            <button class="num" onclick="getInput('7')">7</button>
+            <button class="num" onclick="getInput('8')">8</button>
+            <button class="num" onclick="getInput('9')">9</button>
+            <button class="opr" onclick="getInput('*')">x</button>
+            <button class="num" onclick="getInput('4')">4</button>
+            <button class="num" onclick="getInput('5')">5</button>
+            <button class="num" onclick="getInput('6')">6</button>
+            <button class="opr" onclick="getInput('-')">-</button>
+            <button class="num" onclick="getInput('1')">1</button>
+            <button class="num" onclick="getInput('2')">2</button>
+            <button class="num" onclick="getInput('3')">3</button>
+            <button class="opr" onclick="getInput('+')">+</button>
+            <button class="num" onclick="getInput('0')">0</button>
+            <button class="num" onclick="getInput('.')">.</button>
+            <button class="equal" onclick="reasult()">=</button>
+            <!-- <button></button> -->
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
