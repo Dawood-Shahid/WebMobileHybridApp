@@ -9,10 +9,9 @@ function getInput(num) {
 function reasult() {
     var input, res;
     input = document.getElementById('userInput');
-    // input.value += num;
     res = eval(input.value);
     document.getElementById('reasult').innerHTML = res;
-    console.log(res);
+    document.getElementById('userInput').value = null;
  
 }
 
